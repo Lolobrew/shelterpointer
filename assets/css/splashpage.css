@@ -1,0 +1,39 @@
+main {
+    margin-top: 3rem;
+}
+         
+main .card {
+    margin-bottom: 2rem;
+}
+        
+      
+.h1-responsive {
+	text-align: center;
+	position: relative;
+	top: 20px;
+	padding-bottom: 40px;
+}
+
+.h4-responsive {
+	display: block;
+	padding-bottom: 40px;
+	margin-left: 20px;
+	text-indent: 20px;
+	line-height: 2.5rem;
+	margin-top: 20px;
+}
+
+
+#shelterpointer {
+	color: #428BCA;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .read-more {
+        text-align: center;
+
+    }
+
+}

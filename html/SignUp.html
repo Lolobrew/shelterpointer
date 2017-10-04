@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Join ShelterPointer</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/MDBootStrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="assets/MDBootStrap/css/mdb.min.css" rel="stylesheet">
+    
+    <link href="assets/MDBootStrap/css/style.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-toggleable-md navbar-light">
+            <div class="container navContainer">
+
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand logo" href="/">
+                    <img src="assets/images/doglogo.png" height="75px;" alt="ShelterPointer Logo" id="logo"/>
+                    <h1 id="name">ShelterPointer.com</h1>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/signup">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/findpet">Find a Friend</a>
+                        </li>
+<!--                    <li class="nav-item dropdown btn-group">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+                                <a class="dropdown-item">Action</a>
+                                <a class="dropdown-item">Another action</a>
+                                <a class="dropdown-item">Something else here</a>
+                            </div>
+                        </li> -->
+                    </ul>
+<!--                     <form class="form-inline waves-effect waves-light">
+                        <input class="form-control" type="text" placeholder="Search">
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        <!--Main layout-->
+        <div class="container" id="signUpForm" style="visibility: hidden;">
+
+            <!--Page heading-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <h1 class="h1-responsive">Sign Up
+                        <small class="text-muted">&nbsp;Keep in touch with our animals</small>
+                    </h1>
+                </div>
+            </div>
+            <!--/.Page heading-->
+            <hr>
+
+            <!--First row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <!--First column-->
+                <div class="col-lg-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight" id="displayPic">
+                            <img src='assets/images/dogTitle.jpg' class='img-fluid' alt=''>
+                            <a href='findpet'>
+                                <div class='mask'></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Fill Out the Form Below</h4>
+                            <!--Text-->
+                            <p class="card-text">We'll keep tabs on your furry friends for you.</p>
+<!--                             <div class="read-more">
+                                <a href="#!" class="btn btn-info">Read more</a>
+                            </div> -->
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--/.First column-->
+
+            </div>
+            <!--/.First row-->
+
+            <!--Second row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <!--First column-->
+                <div class="col-lg-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Text-->
+                            <div class="md-form">
+                                <input type="text" class="form-control" id="nameInput">
+                                <label for="form1" class="">Full Name</label>
+                            </div>
+                            <div class="md-form">
+                                <input type="text" class="form-control" id="emailInput">
+                                <label for="form1" class="">Email</label>
+                            </div>
+                            <div class="md-form">
+                                <input type="text" class="form-control" id="locationInput">
+                                <label for="form1" class="">Location (City, State)</label>
+                            </div>
+                            <div class="md-form">
+                                <input type="text" class="form-control" id="phoneInput">
+                                <label for="form1" class="">Phone number (XXX-XXX-XXXX)</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="card-text">What type of pet are you looking for?</p>
+                                    <form class="form-group">
+                                        <fieldset class="form-group">
+                                            <input name="group1" type="radio" id="radio11" checked="checked" value="dog">
+                                            <label for="radio11">Dog</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group1" type="radio" id="radio21"  value="cat">
+                                            <label for="radio21">Cat</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group1" type="radio" id="radio31" value="horse">
+                                            <label for="radio31">Horse</label>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="card-text">Why are you looking to adopt a pet?</p>
+                                    <form class="form-group">
+                                        <fieldset class="form-group">
+                                            <input name="group2" type="radio" id="radio11" checked="checked" value="companionship">
+                                            <label for="radio11">Companionship</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group2" type="radio" id="radio21" value="children">
+                                            <label for="radio21">Company for child(ren)</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group2" type="radio" id="radio31" value="replace">
+                                            <label for="radio31">Replace lost/deceased animal</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group2" type="radio" id="radio31" value="guard">
+                                            <label for="radio31">Guard Animal</label>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="card-text">Do you rent or own your living space?</p>
+                                    <form class="form-group">
+                                        <fieldset class="form-group">
+                                            <input name="group3" type="radio" id="radio11" checked="checked" value="rent">
+                                            <label for="radio11">Rent</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group3" type="radio" id="radio21" value="own">
+                                            <label for="radio21">Own</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group3" type="radio" id="radio31" value="other">
+                                            <label for="radio31">Other</label>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <hr>
+                                <div class="col-sm-6">
+                                    <p class="card-text">How many animals do you currently care for?</p>
+                                    <form class="form-group">
+                                        <fieldset class="form-group">
+                                            <input name="group4" type="radio" id="radio11" checked="checked">
+                                            <label for="radio11" value="one">One</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group4" type="radio" id="radio21">
+                                            <label for="radio21" value="two">Two</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <input name="group4" type="radio" id="radio31">
+                                            <label for="radio31" value="3+">Three or more</label>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="md-form">
+                                <input type="text" class="form-control" id="peopleInput">
+                                <label for="form1" class="">Please List Any Additional People and Their Ages</label>
+                            </div>
+                            <div class="md-form">
+                                <input type="text" class="form-control" id="relationshipInput">
+                                <label for="form1" class="">Please describe your experience with this type of animal</label>
+                            </div>
+                            <a class="btn btn-warning btn-rounded" id="formSubmit">Submit</a>
+                        </div>
+                        <!--/.Card content-->
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--/.First column-->
+            </div>
+            <!--/.Second row-->
+            <hr>
+        </div>
+        <!--/.Main layout-->
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+        <!--Footer links-->
+        <div class="container">
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-3 offset-lg-1 hidden-lg-down">
+                    <h5 class="title"><strong>About ShelterPointer</strong></h5>
+                    <p>Shelter Pointer was built with MDBootstrap and finds pets using Petfinder.com's API for searches. Maps are provided by Google.</p>
+                </div>
+
+                <div class="col-lg-2 col-md-4" id="lowerNav">
+                    <h5 class="title"><strong>Go To:</strong></h5>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/signup">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="/findpet">Find a Friend</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+            </div>
+        </div>
+        <!--/.Footer links-->
+        <hr>
+        <!--/.Call to action-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="containter-fluid">
+                © 2017 Copyright: Jeff, Chris, and Paul </a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="assets/MDBootStrap/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="assets/MDBootStrap/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="assets/MDBootStrap/js/mdb.min.js"></script>
+
+    <!-- Firebase     -->
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+    <!-- External Script -->
+    <script type="text/javascript" src="assets/javascript/form/formFireBase.js"></script>
+
+    <script>
+        new WOW().init();
+        setTimeout(function(){
+            $("#signUpForm").css("visibility", "visible");
+        }, 500);
+    </script>
+    
+</body>
+
+</html>

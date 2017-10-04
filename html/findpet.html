@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>ShelterPointer Search</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/MDBootStrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="assets/MDBootStrap/css/mdb.min.css" rel="stylesheet">
+    
+    <link href="assets/MDBootStrap/css/style.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-toggleable-md navbar-light">
+            <div class="container navContainer">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand logo" href="/">
+                    <img src="assets/images/doglogo.png" height="75px;" alt="ShelterPointer Logo" id="logo"/>
+                    <h1 id="name">ShelterPointer.com</h1>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Sign Up</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/findpet">Find a Friend</a>
+                        </li>
+<!--                         <li class="nav-item dropdown btn-group">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+                                <a class="dropdown-item">Action</a>
+                                <a class="dropdown-item">Another action</a>
+                                <a class="dropdown-item">Something else here</a>
+                            </div>
+                        </li> -->
+                    </ul>
+<!--                     <form class="form-inline waves-effect waves-light">
+                        <input class="form-control" type="text" placeholder="Search">
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        <!--Main layout-->
+        <div class="container">
+
+            <!--Page heading-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <h1 class="h1-responsive">Search
+                        <small class="text-muted">&nbsp;we'll help you find your new pet</small>
+                    </h1>
+                </div>
+            </div>
+            <!--/.Page heading-->
+            <hr>
+
+            <!--First row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s" id="searchCriteria" style="visibility: hidden;">
+                <!--First column-->
+                <div class="col-lg-12">
+                    <!--Card-->
+                    <div class="card">
+                        <div class="card-block">
+                            <!--Title-->
+                            <h2 class="card-title">Find Your Pet</h2>
+                            <!--Text-->
+                            <p class="card-text">Enter your critera below</p>
+                            <br>
+                            <div class="md-form col-md-4 searchFields">
+                                <input name= "zipCode" type="text" class="form-control" id="zipCode" maxLength="5" placeholder="5 digits">
+                                <label for="zipCode" class="">Zip Code</label>
+                            </div>
+                            <div class="md-form col-md-4 searchFields">
+                                <input name= "zipCode" type="text" class="form-control" id="animaltype" placeholder="dog, cat, horse">
+                                <label for="animaltype" class="">Type of Animal</label>
+                            </div>  
+                            <div class="md-form col-md-4 searchFields">
+                                <input name= "breed" type="text" class="form-control" id="breed" placeholder="Labrador, Tabby, Arabian, etc">
+                                <label for="breed" class="">Breed</label>
+                            </div>        
+                            <a class="btn btn-warning btn-rounded" id="searchButton">Submit</a>
+                        </div>                     
+                    </div>
+                        <!--/.Card content-->
+                        <div class = "container container-flex" id = "initialdisplay">
+                                <div class = "row" id = "buttondisplay"></div>
+                                <div class = "row" id = "displayrow"></div>
+                                <div class = "row" id ="bottombuttons"></div>
+                        </div>
+                        <div class = "jumbotron" id = "picturedisplay">
+                            <div class="row" id = "indbuttondisplay"></div>
+                            <div class = "row" id = 'showanimal'></div>
+                    </div>
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--/.First column-->
+            </div>
+
+            </div>
+            <!--/.First row-->
+
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+        <!--Footer links-->
+        <div class="container">
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-3 offset-lg-1 hidden-lg-down">
+                    <h5 class="title"><strong>About ShelterPointer</strong></h5>
+                    <p>Shelter Pointer was built with MDBootstrap and searches for pets using Petfinder.com's API. Maps are provided by Google.</p>
+                </div>
+
+                <div class="col-lg-2 col-md-4" id="lowerNav">
+                    <h5 class="title"><strong>Go To:</strong></h5>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/signup">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="/findpet">Find a Friend</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+            </div>
+        </div>
+        <!--/.Footer links-->
+        <hr>
+        <!--/.Call to action-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="containter-fluid">
+                © 2017 Copyright: Jeff, Chris, and Paul </a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAINZl8Ilz0R1w4Yx4ziAOM7SoCr-42DS4" async defer></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="assets/MDBootStrap/js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="assets/MDBootStrap/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="assets/MDBootStrap/js/mdb.min.js"></script>
+
+    <!-- Firebase     -->
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+    <!-- External Script -->
+    <script type="text/javascript" src ="assets/javascript/app.js"></script>
+    
+    <script>
+        new WOW().init();
+        setTimeout(function(){
+            $("#searchCriteria").css("visibility", "visible");
+        }, 500);
+    </script>
+    
+</body>
+
+</html>

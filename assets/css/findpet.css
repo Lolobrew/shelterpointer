@@ -1,0 +1,151 @@
+#btmlast20 {
+	position: relative;
+	top: 50px;
+	margin-bottom: 100px;
+}
+
+#btmnext20 {
+	position: relative;
+	top: 50px;
+	margin-bottom: 100px;
+}
+
+button:hover {
+	cursor: default;
+}
+
+#bottombuttons {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+table {
+	margin-left: 40px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.animalpic .nopic{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.animalpic:hover {
+	cursor: pointer;
+}
+
+
+#formbody {
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+.page-header {
+	text-align: center;
+	margin-top: 60px;
+	font-size: 60px;
+	padding-bottom: 40px;
+}
+
+
+
+#displaytext {
+	font-size: 16px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+label {
+	font-size: 20px;
+	color: #428BCA;
+	padding-left: 20px;
+	margin-left: 10px;
+}
+
+input {
+	padding-right: 50px;
+	margin-left: 20px;
+}
+
+#searchButton{
+	position: relative;
+	left: 40px;
+}
+
+#searchButton:hover {
+	cursor: pointer;
+}
+
+#buttondisplay {
+	text-align: center;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#indbuttondisplay {
+	text-align: center;
+}
+
+#showanimal img {
+	margin-top: 20px;
+	display: inline-flex;
+	text-align: center;
+	margin-right: 20px;
+	margin-left: 60px;
+}
+
+#description {
+	font-size: 16px;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.contactinfo {
+	font-size: 20px;+2
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+#indname {
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #428BCA;
+	margin-left: 60px;
+}
+
+td {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	padding-left: 15px;
+}
+
+td p{
+	margin: 0, 0;
+}
+
+.animalname {
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+.next20:hover, .last20:hover {
+	cursor: pointer;
+}
+
+<<<<<<< HEAD
+.jumbotron {
+	background-color: white;
+}
+=======
+#map {
+	display: block;
+	height: 500px;
+	width: 500px;
+}
+>>>>>>> 76f4230baeb5264077f0dee0b34a07a67dc8d9ca
