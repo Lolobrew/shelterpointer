@@ -107,7 +107,7 @@ var search = function(num, offset) {
 	
 	var key = "dced171da3616db767dede0c93058383";
 	//url for ajax request w/ variables
-	var queryURL = 	"http://api.petfinder.com/pet.find?format=json" +
+	var queryURL = 	"https://api.petfinder.com/pet.find?format=json" +
 					"&key=" + key +
 					"&callback=" + "?" +
 					"&location=" + zipCode +
@@ -246,7 +246,7 @@ var animalDetails = function(object) {
 	var thisAnimal = $(this).attr('animalId');
 	var key = "dced171da3616db767dede0c93058383";
 	//url for ajax request w/ variables
-	var queryURL = 	"http://api.petfinder.com/pet.get?format=json" +
+	var queryURL = 	"https://api.petfinder.com/pet.get?format=json" +
 					"&key=" + key +
 					"&callback=" + "?" +
 					"&output=" + "full" +
@@ -259,7 +259,7 @@ var animalDetails = function(object) {
 		if (response.petfinder.header.status.code.$t == "100") {
 			var picsArray = response.petfinder.pet.media.photos.photo;
 			var thisShelter = response.petfinder.pet.shelterId.$t;
-			queryURL = 	"http://api.petfinder.com/shelter.get?format=json" +
+			queryURL = 	"https://api.petfinder.com/shelter.get?format=json" +
 						"&key=" + key +
 						"&callback=" + "?" +
 						"&id=" + thisShelter;
